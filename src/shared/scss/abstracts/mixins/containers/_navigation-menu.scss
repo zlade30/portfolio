@@ -1,0 +1,45 @@
+@mixin show-navigation-menu($display: '') {
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    list-style: none;
+    display: $display;
+  }
+
+  .navigation-menu {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: sticky;
+  }
+
+  .navigation-item {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px 20px 5px 20px;
+    font-family: 'Harmonia-Black';
+    color: #466a73;
+    cursor: pointer;
+
+    &.active {
+      background-color: white;
+      color: $background-color;
+      border-radius: 20px;
+    }
+  }
+
+  .navigation-item:hover {
+    background-color: white;
+    color: $background-color;
+    border-radius: 20px;
+  }
+}
+
+@mixin show-menu-icon($display: block) {
+  .menu-icon {
+    margin: 20px 20px 20px 20px;
+    display: $display;
+  }
+}

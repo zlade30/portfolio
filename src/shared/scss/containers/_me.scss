@@ -1,0 +1,49 @@
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  @include me-container(700px, 300px);
+  @include display-name(30px, 0px);
+  @include display-desc(18px, 70%);
+  @include me-right-container(none);
+  @include resume-btn(14px, 70%);
+  @include me-profile(350px);
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  @include me-container(700px, 400px);
+  @include display-name(45px, 200px);
+  @include display-desc(18px, 70%);
+  @include me-right-container(none);
+  @include resume-btn(14px, 70%);
+  @include me-profile(550px);
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  @include me-container(700px, 0px);
+  @include display-name(30px);
+  @include display-desc(18px, 70%);
+  @include me-right-container(block);
+  @include resume-btn(14px, 70%);
+  @include me-profile(450px, 150px, 150px);
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  @include me-container(700px, 0px);
+  @include display-name(40px);
+  @include display-desc(20px, 80%);
+  @include me-right-container(block);
+  @include resume-btn(16px, 80%);
+  @include me-profile(550px);
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  @include me-container(700px, 0px);
+  @include display-name(50px);
+  @include display-desc(20px);
+  @include me-right-container(block);
+  @include resume-btn(18px);
+  @include me-profile();
+}

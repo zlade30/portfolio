@@ -1,0 +1,60 @@
+@mixin me-container($height: 700px, $marginTop: 0px) {
+  .me-container {
+    height: $height;
+    margin-top: $marginTop;
+  }
+}
+
+@mixin me-profile($width: 607px, $paddingTop: 100px, $paddingBottom: 100px) {
+  .me-profile {
+    position: absolute;
+    right: 0;
+    width: $width;
+    height: auto;
+    padding-top: $paddingTop;
+    padding-bottom: $paddingBottom;
+  }
+}
+
+@mixin display-name($fontSize, $marginTop: 0px) {
+  .display-name {
+    font-size: $fontSize;
+    font-family: 'Harmonia-Black';
+    color: #ddf8ff;
+    text-decoration: underline;
+    margin-bottom: 30px;
+    margin-top: $marginTop;
+  }
+}
+
+@mixin display-desc($fontSize, $width: 100%) {
+  .display-desc {
+    font-size: $fontSize;
+    font-family: 'Harmonia-Regular';
+    color: #ddf8ff;
+    text-align: justify;
+    width: $width;
+  }
+}
+
+@mixin me-right-container($display: 'block') {
+  .me-right-container {
+    display: $display;
+  }
+}
+
+@mixin resume-btn($textSize, $width: 100%) {
+  .resume-btn {
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    background-color: #ddf8ff;
+    font-family: 'Harmonia-Bold';
+    color: #466a73;
+    font-size: $textSize;
+  }
+
+  .resume-container {
+    width: $width;
+    margin-top: 40px;
+  }
+}

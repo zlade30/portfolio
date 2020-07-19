@@ -2,14 +2,17 @@
 
 // Abstracts
 @import 'abstracts/functions';
-@import 'abstracts/mixins';
+@import 'abstracts/mixins/mixins';
 @import 'abstracts/variables';
 
 // Layout
-@import 'layout/app';
+@import 'containers/app';
+@import 'containers/navigation-menu';
+@import 'containers/me';
 
 // Base
 @import 'base/fonts';
 
 // Vendors
-@import 'vendors/antd';
+@import 'vendors/bootstrap';
+@import 'vendors/pure-drawer/pure-drawer';

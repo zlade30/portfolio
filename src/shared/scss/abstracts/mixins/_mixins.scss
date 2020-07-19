@@ -2,6 +2,9 @@
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
 
+@import './containers/navigation-menu';
+@import './containers/me';
+
 /// Event wrapper
 /// @author Harry Roberts
 /// @param {Bool} $self [false] - Whether or not to include current selector

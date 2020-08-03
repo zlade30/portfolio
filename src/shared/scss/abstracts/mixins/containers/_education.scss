@@ -1,0 +1,35 @@
+@mixin education-container($height: 700px) {
+  .education-container {
+    height: $height;
+  }
+}
+
+@mixin education-img(
+  $width: 607px,
+  $top: 700px,
+  $paddingTop: 100px,
+  $paddingBottom: 100px
+) {
+  .education-img {
+    position: absolute;
+    left: 0;
+    top: $top;
+    width: $width;
+    height: auto;
+    padding-top: $paddingTop;
+    padding-bottom: $paddingBottom;
+  }
+}
+
+@mixin display-course($fontSize, $marginTop: 0px, $width: 100%) {
+  .display-course {
+    font-size: $fontSize;
+    font-family: 'Harmonia-Black';
+    color: #ddf8ff;
+    text-decoration: underline;
+    margin-bottom: 30px;
+    margin-top: $marginTop;
+    text-align: center;
+    width: $width;
+  }
+}

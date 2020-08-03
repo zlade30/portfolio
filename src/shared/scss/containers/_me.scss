@@ -10,12 +10,12 @@
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
-  @include me-container(700px, 400px);
-  @include display-name(45px, 200px);
+  @include me-container(750px, 300px);
+  @include display-name(30px, 0px);
   @include display-desc(18px, 70%);
   @include me-right-container(none);
   @include resume-btn(14px, 70%);
-  @include me-profile(550px);
+  @include me-profile(500px, 0px, 0px);
 }
 
 // Medium devices (tablets, 768px and up)

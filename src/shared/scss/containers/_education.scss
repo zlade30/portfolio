@@ -1,6 +1,9 @@
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
   @include education-container(700px);
+  @include education-img(400px, 750px, 100px, 100px);
+  @include display-course(30px, 100px, 80%);
+  @include display-schoolyear(18px);
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -8,6 +11,7 @@
   @include education-container(800px);
   @include education-img(550px, 800px, 100px, 100px);
   @include display-course(30px, 0px, 80%);
+  @include display-schoolyear(18px);
 }
 
 // Medium devices (tablets, 768px and up)
@@ -15,6 +19,7 @@
   @include education-container(250px);
   @include education-img(450px, 600px, 100px, 100px);
   @include display-course(30px, 0px);
+  @include display-schoolyear(18px);
 }
 
 // Large devices (desktops, 992px and up)
@@ -22,6 +27,7 @@
   @include education-container(350px);
   @include education-img(550px, 600px, 100px, 100px);
   @include display-course(40px, 0px);
+  @include display-schoolyear(20px);
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -29,4 +35,5 @@
   @include education-container(700px);
   @include education-img(607px, 700px, 100px, 100px);
   @include display-course(50px, 0px);
+  @include display-schoolyear(20px);
 }

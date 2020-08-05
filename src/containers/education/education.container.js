@@ -11,10 +11,28 @@ const Education = () => {
         <label className="display-course">
           Bachelors of Science in Information Technology
         </label>
-        <label className="display-desc">(2014-2018)</label>
-        <label className="display-desc">
-          @Northern Bukidnon Community College
-        </label>
+        <div className="d-flex align-items-center">
+          <img
+            alt="school-img"
+            src={require('../../shared/icons/school.png')}
+            width={30}
+            height={30}
+            style={{ marginRight: 10 }}
+          />
+          <label className="display-schoolyear">
+            @Northern Bukidnon Community College
+          </label>
+        </div>
+        <div className="d-flex align-items-center">
+          <img
+            alt="school-img"
+            src={require('../../shared/icons/calendar.png')}
+            width={30}
+            height={30}
+            style={{ marginRight: 10 }}
+          />
+          <label className="display-schoolyear">(2014-2018)</label>
+        </div>
       </div>
     </div>
   )

@@ -21,6 +21,16 @@
   }
 }
 
+@mixin display-schoolyear($fontSize, $width: 100%) {
+  .display-schoolyear {
+    font-size: $fontSize;
+    font-family: 'Harmonia-Regular';
+    color: #ddf8ff;
+    margin-top: 0.5rem;
+    width: $width;
+  }
+}
+
 @mixin display-course($fontSize, $marginTop: 0px, $width: 100%) {
   .display-course {
     font-size: $fontSize;
@@ -28,7 +38,7 @@
     color: #ddf8ff;
     text-decoration: underline;
     margin-bottom: 30px;
-    margin-top: $marginTop;
+    margin-top: $marginTop + 0.5;
     text-align: center;
     width: $width;
   }

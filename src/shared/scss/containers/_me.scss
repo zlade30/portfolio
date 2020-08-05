@@ -1,11 +1,11 @@
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-  @include me-container(700px, 300px);
+  @include me-container(600px, 300px);
   @include display-name(30px, 0px);
   @include display-desc(18px, 70%);
   @include me-right-container(none);
   @include resume-btn(14px, 70%);
-  @include me-profile(350px);
+  @include me-profile(400px, 0px, 0px);
 }
 
 // Small devices (landscape phones, 576px and up)
